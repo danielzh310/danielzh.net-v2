@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Zhu</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" type="image/png" href="assets\favicon.png"/>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a href="#" class="brand">Daniel Zhu</a>
+      <nav>
+        <a href="#about" data-section="about">About</a>
+        <a href="#work" data-section="work">Work</a>
+        <a href="#progress" data-section="progress">Publications</a>
+        <a href="#contact" data-section="contact">Connect</a>
+      </nav>
+      <button id="dark-mode-toggle" class="dark-mode-btn">
+        <span class="icon">☀️</span> Light
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="front" class="content-section">
+      <div class="welcome-container">
+        <h1 class="welcome-title"> Hello👋! I am Daniel Zhu</h1>
+        <p id="welcome-text" class="welcome-text"></p>
+        <button id="contact-button" class="framed-button hidden"></button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="content-section hidden">
+      <h1>About</h1>
+      <p>
+        I recently graduated from <a href="https://www.cmu.edu/" id="cmu">
+        Carneige Mellon University</a> with a BSc in Statistics and Data 
+        Science. I used to build electric race cars with
+        <a href="https://www.carnegiemellonracing.org/" id="cmr"> 
+        Carneige Mellon Racing</a>, run a nonprofit teaching music with 
+        <a href="https://dragonkimfoundation.org/fellowship/" id="dkf">
+        The Dragon Kim Foundation</a> and <a href="https://www.ocsarts.net/" 
+        id="ocsa">OCSA</a>, and taught sustainability to low income kids with
+        <a href="https://www.youtube.com/watch?v=LjYRrmJcheo" id="growing">
+        The Growing Tree</a>.
+      </p>
+
+      <p>
+        I have worked on driverless vehicles research at the <a href=
+        "https://www.cs.cmu.edu/afs/cs/project/alv/www/" id="navlab">NavLab</a>,
+        machine learning products with
+        <a href="https://www.linkedin.com/company/fifth-season-fresh/" id="efs">
+        Fifth Season</a>, business analysis and project management at 
+        <a href="https://www.kingston.com/en" id="king">Kingston</a>, built
+        vehicle dynamics and track-side data analysis tools with 
+        <a href="https://www.mathworks.com/" id="matlab">MATLAB</a>, 
+        internal tools and workflows with <a href="https://www.atlassian.com/" 
+        id="atlassian">Atlassian</a>, and started a marketing department for 
+        <a href="https://www.carnegiemellonracing.org/" id="cmr"> CMR</a>.
+    </p>
+    </p>
+        Want to know more about me? Just looking to get coffee? Feel free to 
+        reach out!
+    <p>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="content-section hidden">
+      <h1>Work</h1>
+      <div class="work-container">
+        <img src="assets/resume.png" alt="Saijitsu Book Cover" class="book-cover">
+        <div class="work-details">
+          <p class="book-title">Resume</p>
+      <a href="assets/resume.pdf target="_blank" class="preorder-button">
+        Click Here!
+      </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section hidden">
+      <h1>Stay Connected!</h1>
+      <p>Find me on LinkdedIn, follow me on Instagram, or simply email me!</p>
+      <div class="contact-options">
+        <div class="option">
+          <a href="https://www.linkedin.com/in/daniel-zhu-43a080213/" target="_blank" 
+          class="subscribe-button">Connect on LinkedIn</a>
+        </div>
+        <div class="option">
+          <a href="https://www.instagram.com/classical_clarinet//" target="_blank" 
+          class="subscribe-button">Follow on Instagram</a>
+        </div>
+        <div class="option">
+          <a href="danielzh310@gmail.com" target="_blank" 
+          class="buy-coffee-button">Email Me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- Progress Section -->
+<section id="progress" class="content-section hidden full-height">
+  <h1>Publications</h1>
+  <p>Follow along my publication journey!</p>
+  <div class="progress-updates">
+    <!-- Frame work for other pages
+    <div class="update">
+      <button class="update-toggle">MM-DD-YYYY - Page XYZ</button>
+      <div class="update-content">
+        <p>Insert page content here.</p>
+      </div>
+    </div> 
+    -->
+    <!-- First Update -->
+    <div class="update">
+      <button class="update-toggle">A Software Defined Networking Approach to
+        Routing in Space: A Quantitative Case Study </button>
+      <div class="update-content">
+        <p><strong>2025, Jay “Russell” Meredith Ph.D., Zhu, Daniel</strong></p>
+        <p><strong>Abstract:</strong></p>
+        <p>Private venture capital investment and lower space vehicle
+            (S/V) launch costs are driving aerospace architectural changes.
+            As a result, government and commercial vendors are de-
+            veloping and deploying proliferated S/V mesh constellation
+            architectures at a much faster rate. These emerging proliferated
+            S/V mesh constellations are adapting Internet Protocol (IP)
+            based technologies and protocols as the basis for the Space
+            Data Transport Network (SDTN) architectures. Examples of
+            SDTNs are Space Development Agency’s (SDA) Proliferated
+            Warfighter Space Architecture (PWSA), SpaceX’s Starshield,
+            Eutelsat’s OneWeb, and Amazon’s Kuiper. 
+            The question of which architectural network approach is
+            most optimal for SDTNs is of increasing interest for re-
+            searchers. Various methods have been proposed such as the
+            PWSA Network Established Beyond the Upper Limits of the
+            Atmosphere (NEBULA). Additionally, other techniques incor-
+            porating traditional terrestrial commercially proven protocols
+            such as MultiProtocol Label Switching (MPLS), Software
+            Defined Networking (SDN), Network Configuration Protocol
+            (NETCONF) / Yet Another Next Generation (YANG), SDN
+            configured Forwarding Information Bases (FIB) of IP ad-
+            dresses, and even established interior/exterior routing proto-
+            cols. Empirical-based research is required to determine what the
+            optimal SDTN architectural approach is for space routing
+            given the known conditions, constraints, and requirements of
+            the system architectures.</p>
+        <p><strong>Link:</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2024 Daniel Zhu. All rights reserved.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
