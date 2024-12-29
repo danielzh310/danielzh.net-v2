@@ -1,0 +1,459 @@
+/* Main Framework style*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', Montserrat, monospace;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  header {
+    background: #f9f9f9;
+    padding: 1em;
+    margin: 0 2em;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: calc(100% - 4em);
+  }
+  
+  .brand {
+    font-size: 1em;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  nav {
+    display: flex;
+    gap: 2em;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .dark-mode-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: inherit;
+  }
+  
+  .icon {
+    filter: grayscale(1);
+    display: inline-block;
+    vertical-align: middle;
+    height: 1em;
+    width: 1em;
+    text-align: center;
+    line-height: 1em;
+  }
+  
+  body.dark-mode {
+    background-color: #333;
+    color: #f9f9f9;
+  }
+  
+  header {
+    position: relative;
+    z-index: 1000;
+  }
+  
+  body.dark-mode header {
+    background-color: #333;
+    color: #f9f9f9;
+  }
+  
+  
+  body.dark-mode footer {
+    background-color: #333;
+    color: #f9f9f9;
+  }
+  
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(100vh - 6em);
+    margin: auto 2em;
+    max-width: calc(100% - 4em);
+    box-sizing: border-box;
+  }
+  
+  .welcome-title {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .welcome-text {
+    font-size: 1.25em;
+    margin-bottom: 1.5em;
+    text-align: left;
+    white-space: pre-line;
+  }
+  
+  .framed-button {
+    background: none;
+    border: none;
+    font-size: 1.25em;
+    color: inherit;
+    cursor: pointer;
+    font-family: 'Montserrat', Montserrat, monospace;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .framed-button::before {
+    content: "[Welcome to my site]";
+    /* color: #875f9a; */
+    font-weight: bold; 
+  }
+  
+  .framed-button:hover::before {
+    content: "Connect with me >";
+    /* color: #2E0329; */
+    font-weight: bold; 
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  footer {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 1em;
+    margin-top: auto;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 2em;
+    max-width: calc(100% - 4em);
+    box-sizing: border-box;
+  }
+  
+  .content-section:not(#front) {
+    margin: 0 4em;
+    padding: 2em 0; 
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    .content-section:not(#front) {
+      margin: 0 2em;
+    }
+  }
+
+/*Custom Font Colors*/ 
+
+h1 {
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    opacity: 0.35;
+}
+
+#description {
+    font-size: 20px;
+}
+
+#cmr {
+    color: #a0000f;
+}
+
+#cmu {
+    color: #b6022f;
+}
+
+#dkf {
+    color: #ee1c24;
+}
+
+#ocsa {
+    color: #8c52ff;
+}
+
+#growing {
+    color: #1e9614;
+}
+
+#navlab {
+    color: #878e76;
+}
+
+#tune {
+    color: #f36afa;
+}
+
+#spotify {
+    color: #1ed45e;
+}
+
+#king {
+    color: #c8122e;
+}
+
+#matlab {
+    color: #bf4d0f;
+}
+
+#atlassian {
+    color: #0050d3;
+}
+
+#email {
+    color: #d15b35;
+}
+
+#resume {
+    color: #e50214;
+}
+
+#github {
+    color: #010409;
+}
+
+#insta {
+    color: #e130bd;
+}
+
+#link {
+    color: #0e66c2;
+}
+
+#issuu {
+    color: #ff624f;
+}
+
+#ngc {
+    color: #0069b0;
+}
+
+#efs {
+    color: #01b781;
+}
+  
+  /* Work section styles */
+  .work-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2em;
+  }
+  
+  .book-cover {
+    width: 300px;
+    height: auto;
+    border: 2px solid #333;
+    margin-bottom: 1em;
+  }
+  
+  .work-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+  }
+  
+  .book-title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  
+  .preorder-button {
+    text-decoration: none;
+    background-color: #941120; 
+    color: #fff;
+    border: none;
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .preorder-button:hover {
+    background-color: #C41230; 
+  }
+  
+  body.dark-mode .preorder-button {
+    background-color: #555; 
+  }
+  
+  body.dark-mode .preorder-button:hover {
+    background-color: #222; 
+  }
+  
+  body.dark-mode .book-cover {
+    border-color: #f9f9f9;
+  }
+  
+  body.dark-mode .book-title {
+    color: #f9f9f9;
+  }
+  
+  /* Contact section styles */
+  .contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: flex-start;
+    margin-top: 1em;
+  }
+  
+  .option {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .subscribe-button,
+  .buy-coffee-button {
+    background-color: #941120;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe-button:hover,
+  .buy-coffee-button:hover {
+    background-color: #C41230;
+  }
+  
+  .subscribe-button,
+  .buy-coffee-button {
+    background-color: #941120;
+    color: #fff;
+  }
+  
+  .subscribe-button:hover,
+  .buy-coffee-button:hover {
+    background-color: #C41230;
+  }
+  
+  body.dark-mode .subscribe-button,
+  body.dark-mode .buy-coffee-button {
+    background-color: #555;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .subscribe-button:hover,
+  body.dark-mode .buy-coffee-button:hover {
+    background-color: #222;
+  }
+  
+  
+  /* Progress Section Style*/
+  .full-height {
+    margin: 0;
+    padding: 2em;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  
+  .progress-updates {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  .update {
+    width: 100%;
+  }
+  
+  .update-toggle {
+    width: 100%;
+    background-color: #941120;
+    color: #fff;
+    border: none;
+    padding: 1em;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update-toggle:hover {
+    background-color: #C41230;
+  }
+  
+  body.dark-mode .update-toggle {
+    background-color: #555;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .update-toggle:hover {
+    background-color: #222;
+  }
+  
+  .update-content {
+    display: none;
+    padding: 1em;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  body.dark-mode .update-content {
+    background-color: #555;
+    color: #e0e0e0;
+    border: 1px solid #e0e0e0
+  }
+  
+  .update-content p {
+    margin: 0;
+  }
+  
+  
+  .update-content p {
+    margin: 0;
+  }
+  
+  
