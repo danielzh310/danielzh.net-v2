@@ -77,3 +77,56 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  document.addEventListener("DOMContentLoaded", () => {
+  const workContainer = document.getElementById("work-container");
+
+  // Array of work entries
+  const workEntries = [
+    {
+      title: "Resume",
+      imagePath: "assets/resume.png",
+      link: "assets/resume.pdf",
+      buttonText: "Click Here!"
+    },
+    {
+      title: "Saijitsu",
+      imagePath: "assets/Saijitsu.cover.png",
+      link: "https://www.amazon.com",
+      buttonText: "Preorder Now"
+    }
+  ];
+
+  // Dynamically generate work entries
+  workEntries.forEach((entry) => {
+    const workEntry = document.createElement("div");
+    workEntry.className = "work-entry";
+
+    const img = document.createElement("img");
+    img.src = entry.imagePath;
+    img.alt = `${entry.title} Cover`;
+    img.className = "book-cover";
+
+    const details = document.createElement("div");
+    details.className = "work-details";
+
+    const title = document.createElement("p");
+    title.className = "book-title";
+    title.textContent = entry.title;
+
+    const button = document.createElement("a");
+    button.href = entry.link;
+    button.target = "_blank";
+    button.className = "preorder-button";
+    button.textContent = entry.buttonText;
+
+    details.appendChild(title);
+    details.appendChild(button);
+
+    workEntry.appendChild(img);
+    workEntry.appendChild(details);
+
+    workContainer.appendChild(workEntry);
+  });
+});
+
